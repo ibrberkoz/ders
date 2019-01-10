@@ -895,3 +895,265 @@ f1.close()
 
 #rassal veri üretme dictiorny dosyaya yazma fonskiyon yazma print fload str döngüler 
 
+
+
+Jupyter Notebook
+Untitled1
+Last Checkpoint: 5 saat önce
+(autosaved)
+Current Kernel Logo
+Python 3 
+File
+Edit
+View
+Insert
+Cell
+Kernel
+Widgets
+Help
+
+
+kelimeler={"kitap":"book"}
+
+kelimeler
+{'kitap': 'book'}
+
+​
+
+sözlük={"kitap":"book",
+        "computer":"bilgisayar",
+        "programlama":"progrramiing"}
+
+)
+print(sözlük["kitap"])
+book
+
+telefon_defteri = {"ahmet öz" : "0532 532 32 32",
+                   "mehmet su": "0543 543 42 42",
+                   "seda naz" : "0533 533 33 33",
+                   "eda ala"  : "0212 212 12 12"}
+
+telefon_defteri = {"ahmet öz" : "0532 532 32 32",
+                   "mehmet su": "0543 543 42 42",
+                   "seda naz" : "0533 533 33 33",
+                   "eda ala"  : "0212 212 12 12"}
+
+def tel_sorgulama("isim"):
+    
+    if isim in telefon_defteri:
+        cevap = "{} adlı kişinin telefon numarası: {}"
+        print(cevap.format(kişi, telefon_defteri[kişi]))
+    else:
+        print("Aradığınız kişi telefon rehberinde yok!")
+telefon_defteri = {"ahmet öz" : "0532 532 32 32",
+                   "mehmet su": "0543 543 42 42",
+                   "seda naz" : "0533 533 33 33",
+                   "eda ala"  : "0212 212 12 12"}
+​
+def tel_sorgulama("isim"):
+    
+    if isim in telefon_defteri:
+        cevap = "{} adlı kişinin telefon numarası: {}"
+        print(cevap.format(kişi, telefon_defteri[kişi]))
+    else:
+        print("Aradığınız kişi telefon rehberinde yok!")
+
+tel_sorgulama("ahmet öz")
+ahmet öz adlı kişinin telefon numarası: 0532 532 32 32
+
+tel_sorgulama("ibö")
+Aradığınız kişi telefon rehberinde yok!
+
+liste = [["Ahmet", "Mehmet", "Ayşe"],
+         ["Sedat", "Serkan", "Selin"],
+         ["Zeynep", "Nur", "Eda"]]
+
+liste
+liste
+[['Ahmet', 'Mehmet', 'Ayşe'],
+ ['Sedat', 'Serkan', 'Selin'],
+ ['Zeynep', 'Nur', 'Eda']]
+
+print(liste[0][0])
+Ahmet
+
+kişiler = {"Ahmet Özkoparan": {"Memleket": "İstanbul",
+                               "Meslek"  : "Öğretmen",
+                               "Yaş"     : 34},
+
+           "Mehmet Yağız"   : {"Memleket": "Adana",
+                               "Meslek"  : "Mühendis",
+                               "Yaş"     : 40},
+
+           "Seda Bayrak"    : {"Memleket": "İskenderun",
+                               "Meslek"  : "Doktor",
+                               "Yaş"     : 30}}
+kişiler = {"Ahmet Özkoparan": {"Memleket": "İstanbul",
+                               "Meslek"  : "Öğretmen",
+                               "Yaş"     : 34},
+​
+           "Mehmet Yağız"   : {"Memleket": "Adana",
+                               "Meslek"  : "Mühendis",
+                               "Yaş"     : 40},
+​
+           "Seda Bayrak"    : {"Memleket": "İskenderun",
+                               "Meslek"  : "Doktor",
+                               "Yaş"     : 30}}
+
+print(kişiler["Mehmet Yağız"]["Yaş"])
+print(kişiler["Mehmet Yağız"]["Yaş"])
+40
+
+float?
+​
+
+telefon_defteri = {"ahmet öz" : "0532 532 32 32",
+                   "mehmet su": "0543 543 42 42",
+                   "seda naz" : "0533 533 33 33",
+                   "eda ala"  : "0212 212 12 12"}
+
+def tel_sorgulama(isim):
+    
+telefon_defteri = {"ahmet öz" : "0532 532 32 32",
+                   "mehmet su": "0543 543 42 42",
+                   "seda naz" : "0533 533 33 33",
+                   "eda ala"  : "0212 212 12 12"}
+​
+def tel_sorgulama(isim):
+    
+    if isim in telefon_defteri:
+        cevap = "{} adlı kişinin telefon numarası: {}"
+        print(cevap.format(kişi, telefon_defteri[kişi]));
+    else:
+        print("Aradığınız kişi telefon rehberinde yok!")
+
+tel_sorgulama("ahmet öz")
+ahmet öz adlı kişinin telefon numarası: 0532 532 32 32
+
+tel_sorgulama("özgecan")
+Aradığınız kişi telefon rehberinde yok!
+
+file=open("D:\\ibo\\deneme.txt","w")
+
+line1="ilk sayfa\n"
+
+line2="ikinci buda\n"
+
+file.write(line1)
+10
+
+file.write(line2)
+12
+
+line3="bunuda yaz yarram"
+
+file.write(line3)
+17
+
+file.close()
+
+ssayı
+asalssayı=[]
+def asal_sayı1(x):
+    for sayı in range(2, x+1):
+        asal = True
+    for i in range(2, sayı):
+        if (sayı % i == 0):
+        asal = False
+    if asal:
+        asalsayı.append(sayı)
+    return asalsayı
+  File "<ipython-input-74-49c94da83d88>", line 7
+    asal = False
+       ^
+IndentationError: expected an indented block
+
+
+
+fin=open("D:\\ibo\\words.txt")
+
+def words(word,a):
+    fin=open("D:\\ibo\\words.txt")
+    wordcount=0
+    linecount=0
+    for line in word:
+        if len(line.strip())==a:
+            wordcount+=1
+        linecount+=1
+    return wordcount
+def words(word,a):
+    fin=open("D:\\ibo\\words.txt")
+    wordcount=0
+    linecount=0
+    for line in word:
+        if len(line.strip())==a:
+            wordcount+=1
+        linecount+=1
+    return wordcount
+
+words(fin,10)
+9199
+
+rm
+words(fin,5)
+import random as rm
+
+file3=open("D:/ibo/randomnmbers.txt","w")
+for i in range(0,10):
+    x=rm.random()
+    print(x) #sadece görmek için yazdırdık
+    file3.write("%f \n" % x) #floating format 
+0.4146855228975127
+0.7436912810883093
+0.274062053221222
+0.8099766477821388
+0.33431703560606796
+0.26176031778821285
+0.4892141320467709
+0.1900044343515912
+0.5701427320866996
+0.891351610994991
+
+file3.close()
+
+x=rm.random()
+
+print(x)
+0.5573872127158277
+
+for x in range(0,11):
+    x=rm.random()
+    print(x)
+0.8884977039456186
+0.7364339559417404
+0.8063463634804012
+0.8991457143819553
+0.9158304577820382
+0.5613132836928647
+0.0054134537245746905
+0.6191541270865364
+0.6607785607750769
+0.6436086232099797
+0.1579018606374213
+
+s
+file3=open("D:/ibo/randomnmberss.txt","w")
+for i in range(0,10):
+    x=rm.random()
+    print(x) #sadece görmek için yazdırdık
+    file3.write("%s \n" %x) # hesap makinesindeki e fonksiyonu gibi yazar
+file3.close()
+0.087138517325973
+0.694827991315065
+0.45899238254119545
+0.9652471800514304
+0.9126358449464921
+0.9395089526950068
+0.8035935065299722
+0.0990974659056375
+0.33783190080876346
+0.4853906001985504
+
+​
+
+
